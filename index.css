@@ -14,9 +14,9 @@ body{
     top: 0;
     z-index: 10;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .navbar ul {
@@ -24,6 +24,7 @@ body{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+   margin: 0;
 }
 
 .navbar li {
@@ -44,15 +45,18 @@ body{
 .logo {
     height: 45px;
     width: 90px;
+  
 }
 
 .logo img {
+
+    left: 0;
     width: 100%;
 }
 
 /* banner */
 .banner {
-    background-image: url("main-img/main-img/banner.jpg");
+    background-image: url("main-img/banner.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -77,14 +81,15 @@ body{
 }
 
 .banner_btn button{
-    width: 60px;
+    width: 100px;
     height: 30px;
     color: black;
     border-radius: 2px;
     border: 1px solid transparent;
+    background-color: rgba(171, 163, 163,1);
 }
 .banner_btn button:hover{
-    background-color: rgb(171, 163, 163);
+    background-color: rgba(171, 163, 163,0.4);
     cursor: pointer;
 }
 
@@ -123,7 +128,7 @@ body{
 }
 
 .row_poster:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .row_posters::-webkit-scrollbar {
